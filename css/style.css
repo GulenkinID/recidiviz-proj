@@ -84,3 +84,19 @@ hr {
 input, select {
   vertical-align: middle;
 }
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSansfont/PublicSans-Regular.woff2") format("woff2"), url("../fonts/PublicSansfont/PublicSans-Regular.woff") format("woff"), url("../fonts/PublicSansfont/PublicSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("../fonts/LibreBaskervilefont/LibreBaskerville-Regular.woff2") format("woff2"), url("../fonts/LibreBaskervilefont/LibreBaskerville-Regular.woff") format("woff"), url("../fonts/LibreBaskervilefont/LibreBaskerville-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: "Public Sans";
+}
