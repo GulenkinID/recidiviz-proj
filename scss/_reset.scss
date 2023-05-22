@@ -12,11 +12,23 @@ body {
   line-height: 1;
 }
 
+img {
+	max-width: 100%;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: inherit;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-nav ul {
+nav, ul {
   list-style: none;
 }
 
@@ -44,6 +56,8 @@ a {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* change colours to suit your needs */

@@ -1,6 +1,89 @@
 @import 'reset';
 @import 'fonts';
 
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
 body {
-	font-family: 'Public Sans';
+	font-family: 'Public Sans', sans-serif;
+	background: #F5F5F5;
+	font-size: 15px;
+	line-height: 130%;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+li {
+	cursor: pointer;
+}
+
+.header {
+	background: url(../pictures/header-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	
+  &__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 25px;
+		margin-bottom: 200px;
+		font-size: 13px;
+	}
+  &__nav-logo {}
+  &__nav-menu {
+		display: flex;
+		gap: 50px;
+	}
+  &__content {
+		max-width: 550px;
+		margin-bottom: 200px;
+	}
+  &__content-title {
+		font-family: 'Libre Baskerville', sans-serif;
+		font-weight: 300;
+		font-size: 38px;
+		line-height: 116%;
+		letter-spacing: 1.2px;
+	}
+  &__content-subtitle {
+		font-size: 18px;
+		line-height: 156%;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+  &__content-btn {
+		
+	}
+  &__company {}
+  &__company-title {
+		font-weight: 300;
+	}
+  &__company-branches {
+		display: grid;
+		gap: 30px;
+		grid-template-columns: repeat(6, 1fr);
+		padding-top: 15px;
+		& li {
+			border-top: 1px solid rgba(255, 255, 255, 0.6);
+			padding: 17px 0;
+		}
+	}
+}
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.button {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 80px;
+	padding: 17px 33px;
 }
